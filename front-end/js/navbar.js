@@ -3,12 +3,12 @@ document.getElementById("navBar").innerHTML =
 '<div class="navcontent">'+
   '<ul>'+
     '<li id="navbar_index"><a href="index.html" >Home</a></li>'+
-    '<li id="navbar_ranking"><a href="ranking.html">Ranking System</a></li>'+
-    '<li id="navbar_weapons"><a href="weapons.html">Weapons</a></li>'+
-    '<li id="navbar_maps"><a href="maps.html">Maps</a></li>'+
-    '<li id="navbar_tips"><a href="tips.html">Tips and Tricks</a></li>'+
-    '<li id="navbar_about"><a href="about.html">About</a></li>'+
-    '<li id="navbar_contact"><a href="contact.html">Contact</a></li>'+
+    '<li id="navbar_ranking"><a href="index.html">Browse</a></li>'+
+    '<li id="navbar_weapons"><a href="index.html">Top</a></li>'+
+    '<li id="navbar_maps"><a href="index.html">Stuff</a></li>'+
+    '<li id="navbar_tips"><a href="index.html">Stuff</a></li>'+
+    '<li id="navbar_about"><a href="index.html">Basket</a></li>'+
+    '<li id="navbar_contact"><a href="index.html">Login</a></li>'+
   '</ul>'+
 '</div>'+
 '</div>';
