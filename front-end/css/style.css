@@ -117,7 +117,7 @@ footer {
   border-radius: 50px;
   display: block;
     margin-left: auto;
-    margin-right: auto 
+    margin-right: auto
 }
 .mainbar h2{
   text-align: center;
@@ -149,4 +149,7 @@ h3{
 .buttonssidebar .button:hover{
   background-color: #8eb5f2;
   color: white;
+}
+.login{
+  text-align: center;
 }
