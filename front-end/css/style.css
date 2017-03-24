@@ -34,7 +34,7 @@ body {
 .navcontainer {
   height: 60px;
   width: 100%;
-  border-bottom: 3px solid #DA4453;
+  border-bottom: 3px solid #8eb5f2;
   margin: 0;
   padding: 0;
   top: 0;
@@ -80,16 +80,16 @@ body {
 }
 
 .navcontainer .activenav {
-  border-top: 3px solid #DA4453;
+  border-top: 3px solid #8eb5f2;
 }
 
 li a:hover {
-  color: #DA4453;
+  color: #8eb5f2;
 }
 
 footer a {
   text-decoration: none;
-  color: #DA4453;
+  color: #8eb5f2;
 }
 
 footer {
@@ -98,10 +98,55 @@ footer {
   padding: 10px;
   padding-bottom: 1px;
   position:absolute;
-  border-top: 3px solid #DA4453;
+/*  border-top: 3px solid #DA4453;*/
   width:100%;
   height:60px;
   clear:both;
 }
+.sidebar{
+  float: left;
+  width: 25%;
+  padding-right: 20px;
+}
+.mainbar{
+  float: right;
+  width: 70%;
+}
+.mainbar img{
+  width: 70%;
+  border-radius: 50px;
+  display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+.mainbar h2{
+  text-align: center;
+}
+h3{
+  text-align: center;
+}
+.sidebarcontent{
+  margin-right: 20px;
+}
+.buttonssidebar{
+  margin-top: 23.4px;
+  margin-bottom: 20px;
+}
 
-
+.buttonssidebar .button {
+  border: none;
+  background-color: white;
+  color: #8eb5f2;
+  text-align: center;
+  cursor: pointer;
+  font-size: 150%;
+  padding: 8px 16px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-right: 0px;
+  width: 100%;
+}
+.buttonssidebar .button:hover{
+  background-color: #8eb5f2;
+  color: white;
+}

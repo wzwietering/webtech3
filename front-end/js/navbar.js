@@ -7,8 +7,8 @@ document.getElementById("navBar").innerHTML =
     '<li id="navbar_weapons"><a href="index.html">Top</a></li>'+
     '<li id="navbar_maps"><a href="index.html">Stuff</a></li>'+
     '<li id="navbar_tips"><a href="index.html">Stuff</a></li>'+
-    '<li id="navbar_about"><a href="index.html">Basket</a></li>'+
-    '<li id="navbar_contact"><a href="index.html">Login</a></li>'+
+    '<li id="navbar_about" style="float:right;"><a href="index.html">Basket</a></li>'+
+    '<li id="navbar_contact" style="float:right;"><a href="index.html">Login</a></li>'+
   '</ul>'+
 '</div>'+
 '</div>';
