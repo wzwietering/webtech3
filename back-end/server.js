@@ -1,8 +1,7 @@
+var http_port = 8000;
 var http = require('http');
-
-http.createServer(function (request, response) {
-    response.writeHead(200, {'Content-Type': 'text/plain'});
-    response.end('Hello World\n');
-}).listen(8086);
-
-console.log('Server started');
+var fs = require('fs');
+var server = http.createServer(function(req, res) {
+  require('./router').get(req, res);
+});
+server.listen(http_port);
