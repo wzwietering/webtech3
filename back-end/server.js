@@ -1,14 +1,7 @@
+var http_port = 8000;
 var http = require('http');
 var fs = require('fs');
-
-
-fs.readFile('../front-end/index.html', function (err, html) {
-    if (err) {
-        throw err;
-    }
-    http.createServer(function(request, response) {
-        response.writeHeader(200, {"Content-Type": "text/html"});
-        response.write(html);
-        response.end();
-    }).listen(8000);
+var server = http.createServer(function(req, res) {
+  require('./router').get(req, res);
 });
+server.listen(http_port);
