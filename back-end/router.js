@@ -19,7 +19,10 @@ exports.get = function(req, response) {
   console.log("Request for " + pathname + " received.");
   pathname = pathname.replace('/group6', '');
   if (pathname === "") {
-    pathname = "/";
+    response.writeHead(302, {
+      'Location': 'http://webtech.science.uu.nl/group6/index.html'
+    });
+    response.end();
   } else if (pathname == "/") {
     pathname = "/index.html";
   }
