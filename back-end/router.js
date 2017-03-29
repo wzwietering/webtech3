@@ -17,6 +17,7 @@ exports.get = function(req, response) {
   req.requrl = url.parse(req.url, true);
   var pathname = url.parse(req.url).pathname;
   console.log("Request for " + pathname + " received.");
+  pathname = pathname.replace('/group6', '');
   if(pathname == "/" || pathname == "/group6"){
     pathname = "/index.html";
   }
