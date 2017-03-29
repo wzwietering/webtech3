@@ -18,7 +18,7 @@ exports.get = function(req, response) {
   var pathname = url.parse(req.url).pathname;
   console.log("Request for " + pathname + " received.");
   pathname = pathname.replace('/group6', '');
-  if(pathname == "/" || pathname == "/group6"){
+  if(pathname == "/" || pathname === ""){
     pathname = "/index.html";
   }
   var elements = pathname.split('.');
@@ -26,7 +26,7 @@ exports.get = function(req, response) {
   fs.readFile('../front-end' + pathname, function(error, data) {
     if(error){
       response.writeHead(404, {'Content-Type': 'text/html'});
-      response.write('<h1>404 - Page not found</h1><p><a href="/">Return to home</a></p>');
+      response.write('<h1>404 - Page not found</h1><p><a href="/group6">Return to home</a></p>');
       response.end();
     } else {
       response.setHeader('Content-Type', type);
