@@ -20,7 +20,7 @@ exports.get = function(req, response) {
   pathname = pathname.replace('/group6', '');
   if (pathname === "") {
     response.writeHead(302, {
-      'Location': '/group6/index.html'
+      'Location': 'group6/index.html'
     });
     response.end();
   } else if (pathname == "/") {
