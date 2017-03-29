@@ -16,8 +16,8 @@ var types = {
 exports.get = function(req, response) {
   req.requrl = url.parse(req.url, true);
   var pathname = url.parse(req.url).pathname;
-  //console.log("Request for " + pathname + " received.");
-  if(pathname == "/" || "group6/"){
+  console.log("Request for " + pathname + " received.");
+  if(pathname == "/" || pathname == "/group6"){
     pathname = "/index.html";
   }
   var elements = pathname.split('.');
@@ -29,7 +29,7 @@ exports.get = function(req, response) {
       response.end();
     } else {
       response.setHeader('Content-Type', type);
-      response.write(data, 'utf8');
+      response.write("hello world", 'utf8');
       response.end();
     }
   });
