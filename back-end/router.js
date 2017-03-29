@@ -17,7 +17,13 @@ exports.get = function(req, response) {
   req.requrl = url.parse(req.url, true);
   var pathname = url.parse(req.url).pathname;
   console.log("Request for " + pathname + " received.");
-  if(pathname == "/" || pathname == "/group6"){
+  pathname = pathname.replace('/group6', '');
+  if (pathname === "") {
+    response.writeHead(302, {
+      'Location': 'http://webtech.science.uu.nl/group6/index.html'
+    });
+    response.end();
+  } else if (pathname == "/") {
     pathname = "/index.html";
   }
   var elements = pathname.split('.');
@@ -25,7 +31,7 @@ exports.get = function(req, response) {
   fs.readFile('../front-end' + pathname, function(error, data) {
     if(error){
       response.writeHead(404, {'Content-Type': 'text/html'});
-      response.write('<h1>404 - Page not found</h1><p><a href="/">Return to home</a></p>');
+      response.write('<h1>404 - Page not found</h1><p><a href="/group6/">Return to home</a></p>');
       response.end();
     } else {
       response.setHeader('Content-Type', type);
