@@ -29,7 +29,7 @@ exports.get = function(req, response) {
       response.end();
     } else {
       response.setHeader('Content-Type', type);
-      response.write("hello world", 'utf8');
+      response.write(data, 'utf8');
       response.end();
     }
   });
