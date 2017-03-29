@@ -15,7 +15,6 @@ document.getElementById("navBar").innerHTML =
 
 $(document).ready(function() {
     var main_route = (window.location.pathname.split("/"));
-    console.log(main_route);
     var ding = main_route[main_route.length-1].split(".")[0];
     $("#navbar_" + ding).addClass('activenav');
 });
