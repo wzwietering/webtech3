@@ -52,10 +52,29 @@ body {
   display: block;
   margin: 0 auto;
 }
-
+#tabs{
+  z-index: 0;
+}
 .navlogo{
   width: 20px;
   height: 20px;
+}
+
+.formbutton {
+  display: inline;
+}
+
+.linktop {
+  text-align: center;
+}
+
+.linktop a {
+  text-decoration: none;
+  color: #DA4453;
+}
+
+#clear {
+  clear:both;
 }
 
 .navcontainer ul {
@@ -79,6 +98,37 @@ body {
   text-decoration: none;
 }
 
+h1 {
+  color: #DA4453;
+  display: inline;
+  font-size: 24px;
+}
+
+h6 {
+  color: #DA4453;
+  display: inline;
+  font-size: 24px;
+}
+
+h4 {
+  display: inline;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.toplinkweapons {
+  text-decoration: none;
+}
+
+.toplinkweapons h4{
+  color: black;
+}
+
+.inlinelink {
+  padding: 0;
+  display: inline;
+}
+
 .navcontainer .activenav {
   border-top: 3px solid #8eb5f2;
 }
@@ -92,6 +142,10 @@ footer a {
   color: #8eb5f2;
 }
 
+.content a{
+  color: #DA4453;
+}
+
 footer {
   margin-top: -60px;
   height: 60px;
@@ -103,6 +157,7 @@ footer {
   height:60px;
   clear:both;
 }
+<<<<<<< HEAD
 .sidebar{
   float: left;
   width: 25%;
@@ -128,6 +183,86 @@ h3{
 .sidebarcontent{
   margin-right: 20px;
 }
+=======
+
+.clear {
+  clear:both;
+}
+
+html, body {
+  height: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+}
+
+.centerheader {
+  text-align: center;
+}
+
+/* Ranking System */
+.ranks {
+  width: 100%;
+  height: 100%;
+  margin-top: 23.4px;
+}
+
+/* Maps */
+ul.tabblad{
+  margin-top: 20px;
+  text-align: center;
+  padding: 0px;
+  list-style: none;
+}
+ul.tabblad li{
+  background-color: #363636;
+  color: white;
+  display: inline-block;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+ul.tabblad li.current{
+  background: #DA4453;
+  color: white;
+}
+
+ul.tabblad li:hover{
+  background: #DA4453;
+}
+
+.tabblad-content{
+  display: none;
+  background: white;
+  padding: 0px;
+  padding-left: 0px;
+}
+
+.tabblad-content.current{
+  display: inherit;
+}
+
+/* Home */
+.mainbar {
+  float: left;
+  width: 70%;
+}
+
+.sidebar {
+  float: right;
+  width: 30%;
+}
+
+.sidebarcontent {
+  margin-left: 25px;
+}
+
+>>>>>>> parent of aa5b334... navbar
 .buttonssidebar{
   margin-top: 23.4px;
   margin-bottom: 20px;
@@ -136,16 +271,23 @@ h3{
 .buttonssidebar .button {
   border: none;
   background-color: white;
+<<<<<<< HEAD
   color: #8eb5f2;
   text-align: center;
   cursor: pointer;
   font-size: 150%;
+=======
+  color: #DA4453;
+  text-align: center;
+  cursor: pointer;
+>>>>>>> parent of aa5b334... navbar
   padding: 8px 16px;
   margin-bottom: 5px;
   margin-top: 0px;
   margin-right: 0px;
   width: 100%;
 }
+<<<<<<< HEAD
 .buttonssidebar .button:hover{
   background-color: #8eb5f2;
   color: white;
@@ -153,3 +295,120 @@ h3{
 .login{
   text-align: center;
 }
+=======
+.mainbar video{
+  width: 100%;
+}
+
+.buttonssidebar .button:hover {
+  background-color: #DA4453;
+  color: white;
+}
+
+/*Weapons*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DA4453;
+}
+
+tr:not(.kop):not(.tussenkop):hover {
+  background-color: #363636;
+  color: white;
+}
+
+.kop {
+  background-color: #DA4453;
+  color: white;
+}
+
+.tussenkop {
+  text-align: center;
+}
+
+.buttonsweapons .button {
+  background-color: #363636;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-bottom: -30px;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.buttonsweapons .button:hover {
+  background-color: #DA4453;
+}
+
+.buttonsweapons {
+  display: table;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+#starting {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+#alt {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+#rifles {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+#submachine {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+#sniper {
+  padding-top: 65px;
+  margin-top: -65px;
+}
+
+/* Tips and Tricks */
+.oldiv {
+  width: 100%;
+  margin-bottom: 60px;
+  display: block;
+}
+
+/* Contact */
+.contactcontent {
+  margin-left: 10px;
+}
+
+.header {
+  color: #DA4453;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.email {
+  text-decoration: none;
+}
+
+.contact {
+  width: 33%;
+  display: inline-block;
+  float: left;
+  margin: 0 auto;
+}
+>>>>>>> parent of aa5b334... navbar
